@@ -11,11 +11,11 @@ import '../styles/Header.css';
 import avatar from '../assets/avatar.svg';
 import info from '../assets/info.svg';
 import Clippathgroup from '../assets/Clippathgroup.svg';
-
+import Icon from '../assets/Icon.svg';
 
 
 export default function Header() {
-  const [workflowState, setWorkflowState] = useState('Enployee Submit');
+  const [workflowState, setWorkflowState] = useState('Employee Submit');
   const employee = {
     name: "Manoj Kandan M",
     genId: "25504878",
@@ -104,9 +104,13 @@ export default function Header() {
         </Grid>
 
         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
-                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 1,marginLeft:"20px" ,fontStyle:"bold",paddingTop:"15px" 
+                      
+                    }}>
                         <img src={Clippathgroup}></img>
-                        <Typography variant="h6">Leave Balance Overview</Typography>
+                    <Typography variant="h6" style={{ fontSize: '20px',fontWeight:'700px',fontStyle:'bold',color:'#202224'}}>
+                      Leave Balance Overview
+                      </Typography>
                         <img src={info}></img>
 
                     </Box>
@@ -157,6 +161,7 @@ export default function Header() {
             <span className="card-title">Maternity Leave</span>
             <span className="card-value">182 days</span>
           </div>
+          <img src={Icon} class="Icon" />
         </div>
 
 

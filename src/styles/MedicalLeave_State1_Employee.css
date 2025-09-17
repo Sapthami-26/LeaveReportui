@@ -5,8 +5,6 @@ body {
     justify-content: center;
     /* padding: 2rem; */
     color: #4A4A4A;
-   
-
 }
 
 :root {
@@ -20,7 +18,7 @@ body {
 }
 
 
-.leaveForm-container {
+.leaveForm-container-Medical {
     background-color: #F9FAFB;
     padding: 2rem;
     border-radius: var(--border-radius);
@@ -28,11 +26,10 @@ body {
     min-width: 1392px;
     max-height: 789px;
     border: 1px solid #e8e8e8;
-   
 }
 
 /* --- Header --- */
-.leaveForm-header {
+.leaveForm-header-Medical {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,46 +38,125 @@ body {
     font-size: 16px;
     font-weight: 700;
 }
-.leaveForm-header-title {
+.leaveForm-header-title-Medical {
     display: flex;
     align-items: center;
     gap: 0.75rem;
 }
-.leaveForm-header-title h2 {
+.leaveForm-header-title-Medical h2 {
     margin: 0;
-    font-size:18px;
+    font-size: 18px;
     font-weight: 700;
     font-style: bold;
-    color:#101928
+    color: #101928;
+}
+
+/* Updated positioning for pop-up container */
+.leaveForm-info-Medical { 
+    position: relative; /* This makes it the positioning context for the pop-up */
+    display: flex; 
+    align-items: center; 
+    gap: 1rem; 
+}
+.leaveForm-info-Medical p { 
+    margin: 0;
+}
+.leaveForm-info-Medical p strong { 
+    color: #108ee9; 
+    font-weight: 600;
+}
+
+.leaveForm-leaveBalance-Medical {
+    font-size: 20px;
+    color: #202224;
+    font-weight: 600;
+    padding-right: 40px;
+}
+
+.leaveForm-leaveCount-Medical {
+    font-weight: 700;
+    color: #009951;
+    font-size: 20px;
+    font-style: bold;
+}
+
+/* Corrected pop-up positioning */
+.leaveForm-note-popup-Medical {
+    /* position: absolute;  */
+    top: 4px; 
+    right: 0;
+    gap: 8px;
+    max-width: 521px;
+    max-height: 111px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    padding: 10px;
+    margin-left: 940px;
+}
+
+.leaveForm-note-header-Medical {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.leaveForm-note-title-Medical {
+    font-size: 16px;
+    font-weight: 700;
+    color: #202224;
+}
+
+.leaveForm-note-close-Medical {
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 1;
+    color: #38AEE0;
+}
+
+.leaveForm-note-list-Medical {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+    color: #4A4A4A;
+    font-size: 14px;
+}
+.leaveForm-note-list-Medical li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.leaveForm-note-list-Medical b {
+    font-weight: 700;
 }
 
 
-
-.leaveForm-info { display: flex; align-items: center; gap: 1rem; }
-.leaveForm-info p { margin: 0; }
-.leaveForm-info p strong { color: #108ee9; font-weight: 600; }
-.leaveForm-noteIcon { font-size: 1.5rem; cursor: pointer; }
-
-
-.leaveForm-form {
+.leaveForm-form-Medical {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.leaveForm-mainGrid {
+.leaveForm-mainGrid-Medical {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 1.5rem 2rem;
-    align-items: end; /* Aligns items to the bottom of their grid cell */
+    align-items: end;
     max-width: 1270px;
 }
 
 /* Helper classes for spanning grid columns */
-.leaveForm-col-span-2 { grid-column: span 2; }
-.leaveForm-col-span-3 { grid-column: span 3; }
+.leaveForm-col-span-2-Medical { 
+    grid-column: span 2; 
+}
+.leaveForm-col-span-3-Medical { 
+    grid-column: span 3; 
+}
 
-.leaveForm-fieldGroup {
+.leaveForm-fieldGroup-Medical {
     display: flex;
     flex-direction: column;
     max-width: 1350px;
@@ -88,20 +164,19 @@ body {
     border-radius: 0.5px;
 }
 
-.leaveForm-label {
+.leaveForm-label-Medical {
     margin-bottom: 0.5rem;
     font-weight: 700;
     color: var(--label-color);
     color: #202224;
     font-size: 14px;
     font-style: bold;
-    
 }
 
 /* --- Inputs, Select, Textarea --- */
-.leaveForm-select,
-.leaveForm-dateInput,
-.leaveForm-textarea {
+.leaveForm-select-Medical,
+.leaveForm-dateInput-Medical,
+.leaveForm-textarea-Medical {
     width: 100%;
     padding: 0.75rem;
     border: 1px solid var(--border-color);
@@ -109,27 +184,26 @@ body {
     font-size: 14px;
     transition: border-color 0.2s, box-shadow 0.2s;
     color: #000000;
-   font-weight: 400;
-   font-style: bold;
-   line-height: 145%;
-   
+    font-weight: 400;
+    font-style: bold;
+    line-height: 145%;
 }
 
-.leaveForm-select:focus,
-.leaveForm-dateInput:focus,
-.leaveForm-textarea:focus {
+.leaveForm-select-Medical:focus,
+.leaveForm-dateInput-Medical:focus,
+.leaveForm-textarea-Medical:focus {
     outline: none;
     border-color: var(--primary-blue);
     box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
 }
 
-.leaveForm-dateInput::-webkit-calendar-picker-indicator {
+.leaveForm-dateInput-Medical::-webkit-calendar-picker-indicator {
     cursor: pointer;
     opacity: 0.6;
 }
 
 /* --- Radio & Checkbox Groups --- */
-.leaveForm-radioGroup {
+.leaveForm-radioGroup-Medical {
     display: flex;
     flex-wrap: wrap; 
     gap: 1rem;
@@ -137,8 +211,7 @@ body {
     padding-top: 0.5rem;
 }
 
-/* MODIFIED: Ensures checkbox and label are on the same line */
-.leaveForm-checkboxGroup {
+.leaveForm-checkboxGroup-Medical {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -146,26 +219,22 @@ body {
     font-weight: 400px;
     font-size: 14px;
     color: #000000;
-    
 }
 
-.leaveForm-checkboxGroup label,
-.leaveForm-radioGroup label {
+.leaveForm-checkboxGroup-Medical label,
+.leaveForm-radioGroup-Medical label {
     cursor: pointer;
-    
 }
 
 input[type="radio"],
 input[type="checkbox"] {
     accent-color: var(--primary-blue);
     transform: scale(1.2);
-    margin-right: 0.25rem; /* Adds a little space before the label text */
+    margin-right: 0.25rem;
 }
 
 /* --- Buttons --- */
-/* ADDED: Wrapper to help align the button next to an input field */
-/* Removed empty .leaveForm-buttonWrapper ruleset as it was not needed */
-.leaveForm-addToListButton {
+.leaveForm-addToListButton-Medical {
     background-color: #FFFFFF;
     border: 1px solid #007bff;
     color: #007bff;
@@ -177,12 +246,12 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    height: 40px; /* Adjusted to match height of other inputs */
+    height: 40px;
     padding: 0 16px;
     margin-left: 670px;
 }
 
-.leaveForm-plusIcon {
+.leaveForm-plusIcon-Medical {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -194,73 +263,39 @@ input[type="checkbox"] {
     font-size: 18px;
     line-height: 1;
 }
-.leaveForm-actionButtons { display: flex;
-   gap: 1rem;
-   
-  }
-.leaveForm-addToListButton:hover { background-color: var(--light-blue); }
-.leaveForm-button {
-    padding: 0.75rem 1.5rem;
-    border-radius: var(--border-radius);
-    border: 1px solid transparent;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
-}
-
-.leaveForm-button-cancel {
-    background-color: var(--background-color);
-    border-color: var(--border-color);
-    color: var(--text-color);
-}
-
-.leaveForm-button-cancel:hover {
-    border-color: var(--primary-blue);
-    color: var(--primary-blue);
-}
-
-.leaveForm-button-submit {
-    background-color: var(--primary-blue);
-    color: #fff;
-    margin-right: 20px;
-}
-
-.leaveForm-button-submit:hover { background-color: #0056b3; }
 
 /* --- Footer Section --- */
-.leaveForm-footer {
+.leaveForm-footer-Medical {
     display: flex;
-    flex-direction: column; /* This stacks the items vertically */
-    gap: 1rem;             /* This creates space between the button row and the link */
+    flex-direction: column;
+    gap: 1rem;
     margin-top: 1.5rem;
     padding-top: 1.5rem;
- 
 }
 
 /* --- "View Policies" Link --- */
-.leaveForm-viewPoliciesLink {
+.leaveForm-viewPoliciesLink-Medical {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     color: #606060;
     text-decoration: none;
     font-weight: 500;
-    align-self: flex-start; /* Aligns this item to the left */
+    align-self: flex-start;
 }
-.leaveForm-viewPoliciesLink:hover {
+.leaveForm-viewPoliciesLink-Medical:hover {
     text-decoration: underline;
 }
 
 /* --- Container for the Action Buttons --- */
-.leaveForm-actionButtons {
+.leaveForm-actionButtons-Medical {
     display: flex;
     gap: 1rem;
-    align-self: flex-end; /* Aligns this item to the right */
+    align-self: flex-end;
 }
 
-/* --- Button Styles (No changes needed here) --- */
-.leaveForm-button {
+/* --- Button Styles --- */
+.leaveForm-button-Medical {
     padding: 0.6rem 1.5rem;
     border-radius: var(--border-radius);
     border: 1px solid var(--primary-theme-color);
@@ -270,31 +305,31 @@ input[type="checkbox"] {
     transition: all 0.2s ease-in-out;
 }
 
-.leaveForm-button-cancel {
+.leaveForm-button-cancel-Medical {
     background-color: #FFFFFF;
     color: var(--primary-theme-color);
 }
-.leaveForm-button-cancel:hover {
+.leaveForm-button-cancel-Medical:hover {
     background-color: #f0faff;
 }
 
-.leaveForm-button-submit {
+.leaveForm-button-submit-Medical {
     background-color: #38AEE0;
     color: #F5F5F5;
 }
 
 /* --- Responsive Adjustments --- */
 @media (max-width: 768px) {
-    .leaveForm-mainGrid {
-        align-items: start; /* Reset alignment for single column */
+    .leaveForm-mainGrid-Medical {
+        align-items: start;
     }
-    .leaveForm-col-span-2,
-    .leaveForm-col-span-3 {
+    .leaveForm-col-span-2-Medical,
+    .leaveForm-col-span-3-Medical {
         grid-column: span 6;
     }
 }
 
-.financial-year-selector {
+.financial-year-selector-Medical {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -304,40 +339,34 @@ input[type="checkbox"] {
     padding: 5px 10px;
 }
 
-
-.financial-year-label {
+.financial-year-label-Medical {
     color: #202224;
     font-size: 14px;
     font-weight: 700;
 }
 
-
-.radio-group-horizontal {
+.radio-group-horizontal-Medical {
     display: flex;
     gap: 10px;
 }
 
-
-.radio-label {
+.radio-label-Medical {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-
-.radio-text {
+.radio-text-Medical {
     margin-left: 8px;
     font-size: 14px;
     font-weight: 700;
     color: #202224;
 }
 
-.leaveForm-textInput {
-    
+.leaveForm-textInput-Medical {
     padding: 13.4px;
-    
     border: 1px solid #D0D5DD;
     border-radius: 6px;
     font-size: 14px;
-      background-color: #fff;
+    background-color: #fff;
 }

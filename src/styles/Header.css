@@ -149,3 +149,67 @@
   background: #fff8e1; 
   color: #f9a825;
 }
+.head{
+  font-weight: 700;
+  font-style: bold;
+  font-size: 20px;
+}
+.balance-cards {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.balance-card {
+  width: 186px;
+  height: 84px;
+  padding: 16px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+.balance-card.casual { background-color: #e3f2fd;
+margin-top: 18px;
+margin-left: 16px; }
+.balance-card.service { background-color: #f3e5f5;
+margin-top: 18px;
+margin-left: 16px; }
+.balance-card.privilege { background-color: #fff3e0;
+margin-top: 18px;
+margin-left: 16px; }
+.balance-card.additional { background-color: #fff8e1;
+margin-top: 18px;
+margin-left: 16px; }
+.balance-card.long-service { background-color: #e8f5e8;
+margin-top: 18px;
+margin-left: 16px;}
+.balance-card.service-pl { background-color: #fce4ec;
+margin-top: 18px;
+margin-left: 16px; }
+.balance-card.maternity { background-color: #f1f8e9;
+margin-top: 18px;
+margin-left: 16px;
+ }
+
+.card-title {
+  font-size: 14px;
+  color: #4B5563;
+  font-weight: 400;
+  line-height: 145%;
+  margin-right: 22px;
+  line-height: 145%;
+}
+
+.card-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  width: 118px;
+  height: 22px;
+   line-height: 145%;
+
+}
