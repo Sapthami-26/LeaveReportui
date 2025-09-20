@@ -140,10 +140,7 @@ const MedicalLeave_State1_Employee = () => {
                             <button type="submit" className="leaveForm-button-Medical leaveForm-button-submit-Medical">Submit</button>
                         </div>
 
-                        <a href="#" className="leaveForm-viewPoliciesLink-Medical">
-                            <img src={policy} className="policy-icon" alt="Policy Icon" />
-                            View Policies
-                        </a>
+                        
                     </footer>
                 </form>
             </div>

@@ -107,11 +107,6 @@ const LossofPay_State1_Employee = () => {
                             <button type="button" className="leaveForm-button-lossofpay leaveForm-button-cancel-lossofpay">Cancel</button>
                             <button type="submit" className="leaveForm-button-lossofpay leaveForm-button-submit-lossofpay">Submit</button>
                         </div>
-
-                        <a href="#" className="leaveForm-viewPoliciesLink-lossofpay">
-                            <img src={policy} className="policy-icon" alt="Policy Icon" />
-                            View Policies
-                        </a>
                     </footer>
                 </form>
             </div>

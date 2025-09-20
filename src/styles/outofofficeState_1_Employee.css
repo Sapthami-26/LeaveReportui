@@ -239,18 +239,7 @@ input[type="checkbox"] {
 }
 
 /* --- "View Policies" Link --- */
-.leaveForm-viewPoliciesLink {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: #606060;
-    text-decoration: none;
-    font-weight: 500;
-    align-self: flex-start; /* Aligns this item to the left */
-}
-.leaveForm-viewPoliciesLink:hover {
-    text-decoration: underline;
-}
+
 
 /* --- Container for the Action Buttons --- */
 .leaveForm-actionButtons {

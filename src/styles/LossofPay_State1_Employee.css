@@ -202,20 +202,6 @@ input[type="checkbox"] {
  
 }
 
-/* --- "View Policies" Link --- */
-.leaveForm-viewPoliciesLink-lossofpay {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: #606060;
-    text-decoration: none;
-    font-weight: 500;
-    align-self: flex-start; /* Aligns this item to the left */
-}
-.leaveForm-viewPoliciesLink-lossofpay:hover {
-    text-decoration: underline;
-}
-
 /* --- Container for the Action Buttons --- */
 .leaveForm-actionButtons-lossofpay {
     display: flex;

@@ -115,10 +115,7 @@ const OutofofficeState_1_Employees = () => {
                             <button type="submit" className="leaveForm-button leaveForm-button-submit">Submit</button>
                         </div>
 
-                        <a href="#" className="leaveForm-viewPoliciesLink">
-                            <img src={policy} className="policy-icon" alt="Policy Icon" />
-                            View Policies
-                        </a>
+                       
                     </footer>
                 </form>
             </div>

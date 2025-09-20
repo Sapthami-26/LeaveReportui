@@ -110,10 +110,7 @@ const MarriageLeave_State1_Employee= () => {
                             <button type="submit" className="leaveForm-button-Marriage leaveForm-button-submit-Marriage">Submit</button>
                         </div>
 
-                        <a href="#" className="leaveForm-viewPoliciesLink-Marriage">
-                            <img src={policy} className="policy-icon" alt="Policy Icon" />
-                            View Policies
-                        </a>
+                       
                     </footer>
                 </form>
             </div>
